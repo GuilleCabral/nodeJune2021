@@ -12,4 +12,4 @@ const int = global.setInterval(() =>{
 console.log(__dirname);
 console.log(__filename);
 
-console.log(document.querySelector)
+console.log(document.querySelector);
