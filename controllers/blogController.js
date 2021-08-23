@@ -3,12 +3,12 @@ const Blog = require('../models/blog');
 //blog_index
 const blog_index = (req, res) =>{
     Blog.find().sort({createdAt: -1 })
-    .then((result) =>{
-      res.render('index', {title: 'All Blogs', blogs:result })
+    .then(result => {
+      res.render('index', { blogs:result ,title: 'All Blogs' })
     })
     .catch((err) =>{
         console.log(err);
-      })
+      });
 }
 
 //blog_details
